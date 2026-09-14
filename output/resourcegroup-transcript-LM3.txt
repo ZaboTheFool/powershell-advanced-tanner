@@ -1,0 +1,37 @@
+**********************
+PowerShell transcript start
+Start time: 20260914034241
+Username: PA-tanner\student
+RunAs User: PA-tanner\student
+Configuration Name: 
+Machine: PA-tanner (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.6.0_x64__8wekyb3d8bbwe\pwsh.dll -noexit -command try { . "c:\Program Files\Microsoft VS Code\110a328ea5\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 8008
+PSVersion: 7.6.6
+PSEdition: Core
+GitCommitId: 7.6.6
+OS: Microsoft Windows 10.0.26100
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is .\resourcegroup-transcript.txt
+Confirm
+Are you sure you want to perform this action?
+Performing the operation "Create" on target "Resource Group 'ConfirmTestRG'".
+&Yes  Yes to &All  &No  No to A&ll  &Suspend
+Y
+Confirm
+Are you sure you want to perform this action?
+Performing the operation "Replacing resource group ..." on target "ConfirmTestRG".
+&Yes  Yes to &All  &No  No to A&ll  &Suspend
+l
+
+[Survey] Tell us what you think of Azure PowerShell. This survey should take about 2 minutes. Run 'Open-AzSurveyLink' to open in browser. Learn more at https://go.microsoft.com/fwlink/?linkid=2202892[K
+Script execution completed.
+**********************
+PowerShell transcript end
+End time: 20260914034255
+**********************

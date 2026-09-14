@@ -11,3 +11,13 @@
 # Improvement that added the most value: I think error handling and logging added the most value because they provide useful information when the script fails and make troubleshooting easier.
 
 # Easiest Improvement to implement: The easiest improvement to implement was the comment-based help because it only required adding ocumentation that explains what the script does and how to use it.
+
+# New-TestResourceGroup Advanced Function
+
+### New-TestResourceGroup creates an Azure resource group in the Central US region.
+
+### The function supports parameter validation, custom tags, pipeline input, structured output, and WhatIf and Confirm.
+
+### ResourceGroupName is required and can be passed directly or through the pipeline. Tags are optional and default to Department = IT and Environment = Test.
+
+### The function returns structured output showing the resource group name, location, creation status, tags, and timestamp.
