@@ -21,3 +21,17 @@
 ### ResourceGroupName is required and can be passed directly or through the pipeline. Tags are optional and default to Department = IT and Environment = Test.
 
 ### The function returns structured output showing the resource group name, location, creation status, tags, and timestamp.
+
+# LM4 Enterprise Function Improvements
+
+### Parameter Sets: New-TestResourceGroup now supports both ResourceGroupName and ProjectID parameters.
+
+### ProjectID Naming: Project IDs are automatically converted into resource group names using the RG- naming convention.
+
+### Pipeline Processing: The function uses Begin, Process, and End blocks to support processing multiple ProjectIDs through the pipeline.
+
+### User Feedback: Verbose output provides information about validation, resource group creation, and completion.
+
+## Bulk Processing: Multiple ProjectIDs can be read from a text file and processed through the pipeline.
+
+### Execution Statistics: The function tracks the total number of requests processed, resources created, resources skipped, and errors encountered.
