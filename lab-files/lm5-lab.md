@@ -39,3 +39,29 @@
 ### Verification: Used Get-Command -Module NWTC.ResourceGroups to Verify the exported function
 
 ### Test Result: New-TestResourceGroup was successfully diusplayed as a public module command
+
+# 5 Task - Create a Private Helper Function
+
+### Private Function: Created Write-ModuleLog in the Private folder
+
+### Logging: Replaced the previoujs transcript logging with Write-ModuleLog
+
+### Log Location: Log files are stored in the module Logs folder
+
+### Private Funstions: Updated the module to load private funtions without exporting them
+
+### Test Result: Logging working successfully and Get-Command only displayed New-TestResourceGroup as a public command
+
+# Task 5 - Test the Module
+
+### ResourceGroupName Test: Successfully create LM5TestRG
+
+### ProjectID Test: Successfully created resource groups using ProjectIDs
+
+### Pipeline Test: Successfully processed multiple ProjectIDs through the pipeline
+
+### Mutiple Values Test: RG-7001, RG-7002, and RG-7003 were created successfully
+
+### Logging Test: Log files were created successfully and stored in the Logs folder
+
+### Test Result: All tested module functionality worked successfully

@@ -1,0 +1,3 @@
+2026-09-28 05:37:44 [INFO] Starting the creation of Resource Group: RG-7001
+2026-09-28 05:37:48 [INFO] Resource Group 'RG-7001' created successfully.
+2026-09-28 05:37:48 [INFO] Finished processing Resource Group: RG-7001

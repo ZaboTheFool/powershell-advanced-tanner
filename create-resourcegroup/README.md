@@ -35,3 +35,21 @@
 ## Bulk Processing: Multiple ProjectIDs can be read from a text file and processed through the pipeline.
 
 ### Execution Statistics: The function tracks the total number of requests processed, resources created, resources skipped, and errors encountered.
+
+# LM5 Module Conversion
+
+### Module: New-TestResourceGroup has been packaged into the NWTC.ResourceGroups PowerShell module
+
+### Public Function: New-TestResourceGroup is stored in the Public folder and is exported for users
+
+### Private Function: Write-ModuleLog is stored in the Private folder and is used internally for logging
+
+### Module Logging: Resource group activity is now recorded in log files stored in the Logs folder
+
+### Module Manifest: NWTC.ResourceGroups includes a module manifest with version and module information
+
+# NWTC.ResourceGroups Module
+
+### The New-TestResourceGroup Function has been packaged into the NWTC.ResourceGroups PowerShell module
+
+### The module includes public and private functions, logging, a module manifest, documentation, andsupport for future expansion

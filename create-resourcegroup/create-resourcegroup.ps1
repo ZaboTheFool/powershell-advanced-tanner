@@ -7,7 +7,7 @@ function New-TestResourceGroup {
 Creates Azure resource groups in the Central US region.
 
 .DESCRIPTION
-New-TestResourceGroup creates Azure resource groups using either a resource group name or a ProjectID. The function supports pipeline input, custom tags, verbose output, WhatIf and Confirm, structured output, and execution statistics.
+New-TestResourceGroup creates Azure resource groups using either a resource group name or a ProjectID. The function supports pipeline input, custom tags, verbose output, WhatIf and Confirm, structured output, execution statistics, and module logging.
 
 .PARAMETER ResourceGroupName
 Specifies the name of the resource group to create.
