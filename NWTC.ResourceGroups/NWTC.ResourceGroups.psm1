@@ -4,3 +4,4 @@ foreach ($function in $publicFunctions) {
     . $function.FullName
 }
 
+Export-ModuleMember -Function $publicFunctions.BaseName
