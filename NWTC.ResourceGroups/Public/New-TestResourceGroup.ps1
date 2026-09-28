@@ -72,12 +72,12 @@ if ($PSCmdlet.ParameterSetName -eq "ProjectID") {
 
 Write-Verbose "Validation successful for resource group: $ResourceGroupName"
 
-$TranscriptPath = "..\output\resourcegroup-transcript.txt"
+$LogFilePath = "$PSScriptRoot\..\Logs\New-TestResourceGroup-Log-$(Get-Date -Format 'yyyyMMdd-HHmmss').txt"
 
 Write-Verbose "Starting resource group creation"
 Write-Debug "Resource group name: $ResourceGroupName"
 
-Start-Transcript -Path $TranscriptPath
+Write-ModuleLog -Message "Starting the creation of Resource Group: $ResourceGroupName" -Level INFO -LogFile $LogFilePath
 
 $result = [PSCustomObject]@{
     ResourceGroupName = $ResourceGroupName
@@ -102,6 +102,8 @@ try {
         $Created++
 
         Write-Verbose "Resource group created successfully: $ResourceGroupName"
+
+        Write-ModuleLog -Message "Resource Group '$ResourceGroupName' created successfully." -Level INFO -LogFile $LogFilePath
     }
     else {
         $Skipped++
@@ -114,12 +116,12 @@ catch {
     $Errors++
     Write-Host "Failed to create the resource group."
     Write-Host $_.Exception.Message
-    
+    Write-ModuleLog -Message "Failed to create Resource Group '$ResourceGroupName'. Error: $($_.Exception.Message)" -Level ERROR -LogFile $LogFilePath
 }
 finally {
     Write-Verbose "Finalizing script execution"
     Write-Host "Script execution completed."
-    Stop-Transcript
+    Write-ModuleLog -Message "Finished processing Resource Group: $ResourceGroupName" -Level INFO -LogFile $LogFilePath
 }
 
 $result

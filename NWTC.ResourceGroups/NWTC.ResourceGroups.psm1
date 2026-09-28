@@ -1,3 +1,9 @@
+$privateFunctions = Get-ChildItem -Path "$PSScriptRoot\Private\*.ps1" -ErrorAction SilentlyContinue
+
+foreach ($function in $privatFunctions) {
+    . $function.FullName
+}
+
 $publicFunctions = Get-ChildItem -Path "$PSScriptRoot\Public\*.ps1" -ErrorAction SilentlyContinue
 
 foreach ($function in $publicFunctions) {
