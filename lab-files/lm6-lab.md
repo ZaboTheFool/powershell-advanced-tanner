@@ -53,3 +53,13 @@
 ### Upgrade Instructions: Documented how to update and reload the module
 
 ### Known Issues: No known issues at this time
+
+# Task 6 - Validate the Upgrade
+
+### Module Version: 1.1.0
+
+### Exported Commands: Get-ResourceGroupSummary and New-TestResourceGroup
+
+### Get-ResourceGroupSummary Test: Successfully displayed the resource group nmae, location, and tags for the Azureresource groups
+
+### Test Result: Version 1.1.0 loaded successfuly and both module fundtions were available working as expected
