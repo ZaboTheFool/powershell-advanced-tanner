@@ -41,3 +41,15 @@
 ### Version 1.1.0 Changes: Added Get-ResourceGroupSummary and updated module testing and documentation
 
 ### Version 1.0.0: Documented the initial release of NWTC.ResourceGroups
+
+# Task 5 - Create Release Notes
+
+### Release Notes File: Created RELEASENOTES.md in the Docs folder
+
+### New Features:Documented the new Get-ResourceGroupSummary function
+
+### Bug Fixes: No major bug fixes were required for this release
+
+### Upgrade Instructions: Documented how to update and reload the module
+
+### Known Issues: No known issues at this time
