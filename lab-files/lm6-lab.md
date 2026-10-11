@@ -63,3 +63,11 @@
 ### Get-ResourceGroupSummary Test: Successfully displayed the resource group nmae, location, and tags for the Azureresource groups
 
 ### Test Result: Version 1.1.0 loaded successfuly and both module fundtions were available working as expected
+
+# Task 7 - Final Documentation and Module Packaging
+
+### Documentation: Updated the repository README and mmodule RERADME to include the new Get-ResourceGroupSummary functionand version 1.1.0 information
+
+### Release Package: Created the releases folder and packaged NWTC.ResourceGroups version 1.1.0 as NWTC.ResourceGroups-1.1.0.zip
+
+### Result: Version 1.1.0 is Documented and packaged for distribution
